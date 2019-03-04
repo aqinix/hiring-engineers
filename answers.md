@@ -48,46 +48,41 @@ The integrated sql in datadog agent status
 
 Created timeboard by using datadog API. 
 
+                import requests, json, os, datetime, time
+                from datadog import initialize
+                from datadog import api as dog
 
-========================================
+                options = {
+                        'api_key' : '<<API_KEY>>',
+                        'app_key' : '<<APP_KEY>>'
+                        }
 
-import requests, json, os, datetime, time
-from datadog import initialize
-from datadog import api as dog
+                initialize(**options)
 
-options = {
-        'api_key' : '<<API_KEY>>',
-        'app_key' : '<<APP_KEY>>'
-        }
-
-initialize(**options)
-
-def create_timeboard():
-    title = "MY TEST DASHBOARDx"
-    description = "created timeboard via api"
-    graph = {
-        "title": "Custom metric",
-        "definition":
-        {
-            "requests": [{"q": "customCheck.my_metric{host:ubuntu-xenial}"}],
-            "viz": "timeseries",
-        }
-    }
-    graph2 = {
-        "title": "Custom metric with roll up for past 1h",
-        "definition":
-        {
-            "requests": [{"q": "customCheck.my_metric{host:ubuntu-xenial}.rollup(sum, 3600)"}],
-            "viz": "timeseries",
-        }
-    }
-    x = dog.Timeboard.create(title=title, description=description, graphs=[graph, graph2])
-    return x
+                def create_timeboard():
+                    title = "MY TEST DASHBOARDx"
+                    description = "created timeboard via api"
+                    graph = {
+                        "title": "Custom metric",
+                        "definition":
+                        {
+                            "requests": [{"q": "customCheck.my_metric{host:ubuntu-xenial}"}],
+                            "viz": "timeseries",
+                        }
+                    }
+                    graph2 = {
+                        "title": "Custom metric with roll up for past 1h",
+                        "definition":
+                        {
+                            "requests": [{"q": "customCheck.my_metric{host:ubuntu-xenial}.rollup(sum, 3600)"}],
+                            "viz": "timeseries",
+                        }
+                    }
+                    x = dog.Timeboard.create(title=title, description=description, graphs=[graph, graph2])
+                    return x
 
 
-create_timeboard()
-
-====================================================================
+                create_timeboard()
 
 
 ![012](https://user-images.githubusercontent.com/33669341/53704818-2e68b380-3e20-11e9-8855-ba102423ead8.PNG)
