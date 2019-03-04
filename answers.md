@@ -84,18 +84,33 @@ Created timeboard by using datadog API.
 
                 create_timeboard()
 
-
-![012](https://user-images.githubusercontent.com/33669341/53704818-2e68b380-3e20-11e9-8855-ba102423ead8.PNG)
-
-![013](https://user-images.githubusercontent.com/33669341/53704819-2e68b380-3e20-11e9-98cd-1faca7e1b01f.PNG)
-
-![014](https://user-images.githubusercontent.com/33669341/53704820-2e68b380-3e20-11e9-898a-7902be016116.PNG)
-
-![015](https://user-images.githubusercontent.com/33669341/53704821-2f014a00-3e20-11e9-8c4c-0b0be965af13.PNG)
+Below is the JSON response of created timeboard using datadof api
 
 ![016](https://user-images.githubusercontent.com/33669341/53704822-2f014a00-3e20-11e9-830a-b0c4af69a36c.PNG)
 
+Dashboard list : custom created dashboard and mysql dashboard
+
 ![011](https://user-images.githubusercontent.com/33669341/53704824-2f014a00-3e20-11e9-8ca9-65df714327f8.PNG)
+
+Created custom metrics timeboard with and without rollup function for past 1 hour
+
+![012](https://user-images.githubusercontent.com/33669341/53704818-2e68b380-3e20-11e9-8855-ba102423ead8.PNG)
+
+Selected past 5 mins in the timeboard
+
+![013](https://user-images.githubusercontent.com/33669341/53704819-2e68b380-3e20-11e9-98cd-1faca7e1b01f.PNG)
+
+snapshot with selected last 5 mins data
+
+![015](https://user-images.githubusercontent.com/33669341/53704821-2f014a00-3e20-11e9-8c4c-0b0be965af13.PNG)
+
+Dashboard : Mysql timeboard
+
+![014](https://user-images.githubusercontent.com/33669341/53704820-2e68b380-3e20-11e9-898a-7902be016116.PNG)
+
+
+
+
 
 
 ### MONITORING DATA
