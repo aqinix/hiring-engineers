@@ -18,7 +18,7 @@ Host Map with added tag.
 
 ![img001](https://user-images.githubusercontent.com/33669341/53703892-180a2a00-3e17-11e9-931f-35832252c3af.PNG)
 
-Created custom checks with metric named (my_metrics) in the range 0 to 1000 and it's default interval time is 30sec. Then it has been changed to 45sec.
+Created custom checks with metric named (my_metrics) in the range 0 to 1000 and it's default interval time is 30 sec. Then it has been changed to 45 sec.
 
 ![005](https://user-images.githubusercontent.com/33669341/53704096-5c96c500-3e19-11e9-9fca-2ad3a00b3929.PNG)
 
@@ -26,11 +26,11 @@ The created custom check can be viewed in the 'datadog-agent status' as below,
 
 ![dtdg-check](https://user-images.githubusercontent.com/33669341/53704173-974d2d00-3e1a-11e9-89a5-fe17def7a647.PNG)
 
-Initila interval time 05sec for testing.
+Initila interval time 5 sec for testing.
 
 ![custom_metrics](https://user-images.githubusercontent.com/33669341/53704131-f1012780-3e19-11e9-883c-3b7023021a63.PNG)
 
-Then interval changed from 05sec to 45sec to have a clear view.
+Then interval changed from 5 sec to 45 sec to have a clear view.
 
 ![collection interval from 5 to 45](https://user-images.githubusercontent.com/33669341/53704144-13934080-3e1a-11e9-8a16-a2bf71155a18.png)
 
