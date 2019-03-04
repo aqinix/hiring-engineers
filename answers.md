@@ -1,6 +1,6 @@
 ### ENVIRONMENT SETUP
 
-Used Ubuntu 16.04 linux VM via Vagran.
+Used Ubuntu 16.04 linux VM via Vagrant.
 
 ![002](https://user-images.githubusercontent.com/33669341/53703513-2fdfaf00-3e13-11e9-964c-7546da8440c6.PNG)
 
@@ -18,7 +18,7 @@ Host Map with added tag.
 
 ![img001](https://user-images.githubusercontent.com/33669341/53703892-180a2a00-3e17-11e9-931f-35832252c3af.PNG)
 
-Created custom checks with metric named (my_metrics) in the range 0 to 1000 and it's default interval time is 30 sec. Then it has been changed to 45 sec.
+Created custom check with metric named (my_metrics) in the range 0 to 1000 and it's default interval time is 30 sec. Then it has been changed to 45 sec.
 
 ![005](https://user-images.githubusercontent.com/33669341/53704096-5c96c500-3e19-11e9-9fca-2ad3a00b3929.PNG)
 
@@ -92,7 +92,7 @@ Dashboard list : Created custom dashboard and mysql dashboard
 
 ![011](https://user-images.githubusercontent.com/33669341/53704824-2f014a00-3e20-11e9-8ca9-65df714327f8.PNG)
 
-Created custom metrics timeboard with no function and with rollup function for past 1 hour
+Created custom metrics timeboard with no function and with rollup sum function for past 1 hour
 
 ![012](https://user-images.githubusercontent.com/33669341/53704818-2e68b380-3e20-11e9-8855-ba102423ead8.PNG)
 
@@ -115,7 +115,7 @@ Created new metric monitor named (My Monitor)
 ![0019](https://user-images.githubusercontent.com/33669341/53705899-e3eb3500-3e27-11e9-80da-d1ce44e1ce8b.PNG)
 
 Can manage monitor after creating, below properties that include threshold for past 5 mins raise : 
-alert* if range above 800, 
+*alert* if range above 800, 
 *warning* if range above 500 and 
 *notify* if no data more than 10 mins
 
@@ -125,7 +125,7 @@ Data live status & history & evaluation graph with threshold
 
 ![018](https://user-images.githubusercontent.com/33669341/53705763-0892dd00-3e27-11e9-8e0f-eb54c7a0f36a.PNG)
 
-Received below mail for all three different alerts
+Received below mail for all different alerts
 
 * Alert value if above 800
   Test alert with test name (Monitor Name)
