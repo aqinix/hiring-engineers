@@ -36,4 +36,71 @@ Then interval changed from 5 sec to 45 sec to have a clear view.
 
 ### VISUALIZING DATA
 
+The created custom metrics and integrated mysql metrics in the hostmap.
+
+![008](https://user-images.githubusercontent.com/33669341/53704495-5c98c400-3e1d-11e9-8fcd-bf4fc28cd234.PNG)
+
+![009](https://user-images.githubusercontent.com/33669341/53704498-5efb1e00-3e1d-11e9-878c-937641649208.PNG)
+
+The integrated sql in datadog agent status
+
+![010](https://user-images.githubusercontent.com/33669341/53704502-60c4e180-3e1d-11e9-8a46-d787b055327b.PNG)
+
+Created timeboard by using datadog API. 
+
+
+========================================
+
+import requests, json, os, datetime, time
+from datadog import initialize
+from datadog import api as dog
+
+options = {
+        'api_key' : '<<API_KEY>>',
+        'app_key' : '<<APP_KEY>>'
+        }
+
+initialize(**options)
+
+def create_timeboard():
+    title = "MY TEST DASHBOARDx"
+    description = "created timeboard via api"
+    graph = {
+        "title": "Custom metric",
+        "definition":
+        {
+            "requests": [{"q": "customCheck.my_metric{host:ubuntu-xenial}"}],
+            "viz": "timeseries",
+        }
+    }
+    graph2 = {
+        "title": "Custom metric with roll up for past 1h",
+        "definition":
+        {
+            "requests": [{"q": "customCheck.my_metric{host:ubuntu-xenial}.rollup(sum, 3600)"}],
+            "viz": "timeseries",
+        }
+    }
+    x = dog.Timeboard.create(title=title, description=description, graphs=[graph, graph2])
+    return x
+
+
+create_timeboard()
+
+====================================================================
+
+
+![012](https://user-images.githubusercontent.com/33669341/53704818-2e68b380-3e20-11e9-8855-ba102423ead8.PNG)
+
+![013](https://user-images.githubusercontent.com/33669341/53704819-2e68b380-3e20-11e9-98cd-1faca7e1b01f.PNG)
+
+![014](https://user-images.githubusercontent.com/33669341/53704820-2e68b380-3e20-11e9-898a-7902be016116.PNG)
+
+![015](https://user-images.githubusercontent.com/33669341/53704821-2f014a00-3e20-11e9-8c4c-0b0be965af13.PNG)
+
+![016](https://user-images.githubusercontent.com/33669341/53704822-2f014a00-3e20-11e9-830a-b0c4af69a36c.PNG)
+
+![011](https://user-images.githubusercontent.com/33669341/53704824-2f014a00-3e20-11e9-8ca9-65df714327f8.PNG)
+
+
 ### MONITORING DATA
