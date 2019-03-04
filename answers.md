@@ -128,7 +128,9 @@ Data live status & history & evaluation graph with threshold
 Received below mail for all three different alerts
 
 * Alert value if above 800
+  Test alert with test name (Monitor Name)
 
+![021](https://user-images.githubusercontent.com/33669341/53707044-6aeedc00-3e2d-11e9-8c94-8622e8f5e9b9.PNG)
 
 * Warn value if above 500
 
