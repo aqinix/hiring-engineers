@@ -114,7 +114,10 @@ Created new metric monitor named (My Monitor)
 
 ![0019](https://user-images.githubusercontent.com/33669341/53705899-e3eb3500-3e27-11e9-80da-d1ce44e1ce8b.PNG)
 
-Can manage monitor after creating, below properties that include threshold *alert* if range above 800, *warning* if range above 500 and *notify* if no data more than 10 mins
+Can manage monitor after creating, below properties that include threshold for past 5 mins raise : 
+alert* if range above 800, 
+*warning* if range above 500 and 
+*notify* if no data more than 10 mins
 
 ![017](https://user-images.githubusercontent.com/33669341/53705815-560f4a00-3e27-11e9-9c96-4b9094ac7f52.PNG)
 
@@ -134,7 +137,7 @@ Received below mail for all three different alerts
 * Notify if no data
 
 **Bonus Question** Downtime from 7pm to 9am during weekdays and all day in weekend are scheduled as below
-in monitor downtime :
+monitor in manage downtime tab :
 
 ![020](https://user-images.githubusercontent.com/33669341/53706050-a935cc80-3e28-11e9-90b1-dc08f44f6307.PNG)
 
