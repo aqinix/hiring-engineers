@@ -92,9 +92,18 @@ Dashboard list : Created custom dashboard and mysql dashboard
 
 ![011](https://user-images.githubusercontent.com/33669341/53704824-2f014a00-3e20-11e9-8ca9-65df714327f8.PNG)
 
+Dashboard *custom metric* link:
+
+    https://app.datadoghq.com/graph/embed?token=6da76d3c78d5cfac83ed7ea70f9a6d6082d69a4709033946f3c06e56dcfa5700&height=300&width=600&legend=true
+
 Created custom metrics timeboard with no function and with rollup sum function for past 1 hour
 
 ![012](https://user-images.githubusercontent.com/33669341/53704818-2e68b380-3e20-11e9-8855-ba102423ead8.PNG)
+
+
+Dashboard *custom metric with roll up* link:
+
+    https://app.datadoghq.com/graph/embed?token=1db5616b1be00fae1a268699d4cfc0cf4eda6c17d83f4aecca8c850097b7fd8c&height=300&width=600&legend=true
 
 Selected past 5 mins in the timeboard
 
@@ -104,9 +113,6 @@ The received snapshot with selected last 5 mins data
 
 ![015](https://user-images.githubusercontent.com/33669341/53704821-2f014a00-3e20-11e9-8c4c-0b0be965af13.PNG)
 
-Dashboard link:
-
-        https://app.datadoghq.com/dashboard/csu-da5-a7r/my-dashboard?tile_size=m&page=0&is_auto=false&from_ts=1551654480000&to_ts=1551668880000&live=true
 
 Mysql timeboard
 
