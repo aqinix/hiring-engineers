@@ -84,15 +84,15 @@ Created timeboard by using datadog API.
 
                 create_timeboard()
 
-Below is the JSON response of created timeboard using datadof api
+Below is the JSON response of created timeboard using datadog api
 
 ![016](https://user-images.githubusercontent.com/33669341/53705231-23635280-3e23-11e9-8b13-3c3ad3ddcf9f.PNG)
 
-Dashboard list : custom created dashboard and mysql dashboard
+Dashboard list : Created custom dashboard and mysql dashboard
 
 ![011](https://user-images.githubusercontent.com/33669341/53704824-2f014a00-3e20-11e9-8ca9-65df714327f8.PNG)
 
-Created custom metrics timeboard with and without rollup function for past 1 hour
+Created custom metrics timeboard with no function and with rollup function for past 1 hour
 
 ![012](https://user-images.githubusercontent.com/33669341/53704818-2e68b380-3e20-11e9-8855-ba102423ead8.PNG)
 
@@ -100,17 +100,46 @@ Selected past 5 mins in the timeboard
 
 ![013](https://user-images.githubusercontent.com/33669341/53704819-2e68b380-3e20-11e9-98cd-1faca7e1b01f.PNG)
 
-snapshot with selected last 5 mins data
+The received snapshot with selected last 5 mins data
 
 ![015](https://user-images.githubusercontent.com/33669341/53704821-2f014a00-3e20-11e9-8c4c-0b0be965af13.PNG)
 
-Dashboard : Mysql timeboard
+Mysql timeboard
 
 ![014](https://user-images.githubusercontent.com/33669341/53704820-2e68b380-3e20-11e9-898a-7902be016116.PNG)
 
-
-
-
-
-
 ### MONITORING DATA
+
+Created new metric monitor named (My Monitor) 
+
+![0019](https://user-images.githubusercontent.com/33669341/53705899-e3eb3500-3e27-11e9-80da-d1ce44e1ce8b.PNG)
+
+Can manage monitor after creating, below properties that include threshold *alert* if range above 800, *warning* if range above 500 and *notify* if no data more than 10 mins
+
+![017](https://user-images.githubusercontent.com/33669341/53705815-560f4a00-3e27-11e9-9c96-4b9094ac7f52.PNG)
+
+Data live status & history & evaluation graph with threshold
+
+![018](https://user-images.githubusercontent.com/33669341/53705763-0892dd00-3e27-11e9-8e0f-eb54c7a0f36a.PNG)
+
+Received below mail for all three different alerts
+
+* Alert value if above 800
+
+
+* Warn value if above 500
+
+![022](https://user-images.githubusercontent.com/33669341/53706288-d33bbe80-3e29-11e9-9c80-c7c5faceff3a.PNG)
+
+* Notify if no data
+
+**Bonus Question** Downtime from 7pm to 9am during weekdays and all day in weekend are scheduled as below
+in monitor downtime :
+
+![020](https://user-images.githubusercontent.com/33669341/53706050-a935cc80-3e28-11e9-90b1-dc08f44f6307.PNG)
+
+received mail of downtime details:
+
+![023](https://user-images.githubusercontent.com/33669341/53706380-61b04000-3e2a-11e9-820e-eebeaf91a722.PNG)
+
+
